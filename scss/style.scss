@@ -1,0 +1,48 @@
+@import "zero";
+@import "header";
+@import "content";
+@import "mainBody";
+@import "footer";
+@import "media";
+
+.content__item--img img {
+	max-width: 760px;
+} 
+
+.up {
+	position: fixed;
+	bottom: 0;
+	right: 5%;
+	width: 45px;
+	height: 40px;
+	background: rgba(86, 107, 255, 0.6);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	color: #fff;
+	border-radius: 2px;
+	transition: opacity .3s ease 0s;
+	i {
+	animation: up 1.5s linear infinite alternate;
+
+	}
+}
+.up.hide {
+	transition: all .3s ease 0s;
+	opacity: 0;
+	visibility: hidden;
+}
+@keyframes up {
+	0% {
+		transform: translateY( -8px);
+	}
+	50% {
+		transform: translateY( 5px);
+	}
+	100% {
+		transform: translateY(-8px);
+	}
+
+}

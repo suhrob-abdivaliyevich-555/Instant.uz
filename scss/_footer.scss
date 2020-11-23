@@ -1,0 +1,146 @@
+.footer {
+	padding: 0px 0px 50px 0px;
+	&__body {
+		max-width: 1466px;
+		margin: 0 auto;
+	}
+
+	&__logo {
+		font-size: 35px;
+		letter-spacing: 0.5px;
+		margin: 0px 0px 50px 35px;
+		font-weight: bold;
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		width: 200px;
+		margin: 0px 15px 0px 0px;
+	}
+
+	&__card--title {
+		color: #0029ff;
+		font-size: 18px;
+		font-weight: bold;
+		font-family: Roboto;
+		margin: 0px 0px 20px 0px;
+	}
+	&__card--subtitle {
+		color: #444;
+		font-size: 16px;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__link {
+		color: #000;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 500;
+		display: flex;
+		margin: 0px 0px 20px 0px;
+		&:hover {
+			text-decoration: underline;
+		}
+		&:before {
+			content: "";
+			margin: 0px 15px 0px 0px;
+			background: url(../img/icons/phone.svg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 18px;
+			height: 18px;
+		}
+	}
+
+	&__email {
+		color: #000;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 500;
+		display: flex;
+		&:hover {
+			text-decoration: underline;
+		}
+		&:before {
+			content: "";
+			margin: 0px 15px 0px 0px;
+			background: url(../img/icons/email.svg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 18px;
+			height: 18px;
+		}
+	}
+
+	&__list {
+		a {
+			font-weight: normal;
+			font-size: 16px;
+			margin: 0px 0px 10px 0px;
+
+			color: #444;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__form {
+		input {
+			border: none;
+			padding: 15px 25px;
+			width: 95%;
+			margin: 0px 0px 23px 0px;
+			font-size: 16px;
+
+			background: #ffffff;
+			box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.25);
+			border-radius: 30px;
+		}
+	}
+
+	&__form--title {
+		font-size: 18px;
+		font-weight: bold;
+		font-family: Roboto;
+		margin: 0px 0px 25px 0px;
+	}
+
+	&__btn {
+		font-family: Roboto;
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 900;
+		padding: 15px 25px;
+		border-radius: 30px;
+		background: linear-gradient(104.24deg, #0066ff -17.24%, #0066ff 132.27%);
+		transition: transform .3s ease-in-out;
+		&:hover {
+			transform:  scale(1.1);
+		}
+	}
+}
+
+.links {
+	border-top: 3px solid  #0066FF;
+	padding: 30px 0 50px 0;
+	&__body {
+		width: 200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__img {
+		width: 30px;
+		transition: transform .3s ease-in-out;
+		&:hover {
+			transform: rotate(360deg) scale(1.1);
+		}
+	}
+}
